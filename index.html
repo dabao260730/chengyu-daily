@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日成语 · 锲而不舍</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0; padding: 16px; min-height: 100vh;
+        }
+        .card {
+            max-width: 680px; margin: 0 auto; background: white;
+            border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #4361ee, #7209b7);
+            color: white; padding: 24px 24px 20px; text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: 2px; }
+        .header .chengyu { font-size: 32px; font-weight: bold; margin: 12px 0 8px; }
+        .header .pinyin { font-size: 16px; opacity: 0.9; }
+        .header .date-badge {
+            display: inline-block; background: rgba(255,255,255,0.2);
+            padding: 4px 14px; border-radius: 20px; font-size: 13px; margin-top: 12px;
+        }
+        .section { padding: 20px 24px; border-bottom: 1px solid #f0f0f0; }
+        .section:last-of-type { border-bottom: none; }
+        .section-title {
+            font-size: 15px; font-weight: 600; color: #4361ee;
+            margin-bottom: 10px; display: flex; align-items: center;
+        }
+        .section-title::before {
+            content: ""; width: 4px; height: 16px; background: #4361ee;
+            border-radius: 2px; margin-right: 8px;
+        }
+        .meaning { font-size: 15px; line-height: 1.8; color: #333; }
+        .quote {
+            background: #f8f6ff; border-left: 4px solid #7209b7;
+            padding: 12px 16px; margin: 12px 0; font-style: italic;
+            color: #555; border-radius: 0 8px 8px 0;
+        }
+        .sentence-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+        .sentence-table th, .sentence-table td {
+            padding: 12px; text-align: left; border-bottom: 1px solid #eee;
+        }
+        .sentence-table th {
+            background: #fafafa; font-weight: 600; font-size: 14px; color: #666;
+        }
+        .sentence-table td { font-size: 14px; line-height: 1.7; color: #444; }
+        .tag-primary { color: #2d7ff9; }
+        .tag-warning { color: #e6a700; }
+        .tag-danger { color: #c41e3a; }
+        .word-pair { display: flex; gap: 20px; flex-wrap: wrap; }
+        .word-pair div { flex: 1; min-width: 140px; }
+        .word-pair span {
+            display: inline-block; background: #f0f0f0;
+            padding: 4px 10px; border-radius: 6px;
+            margin: 4px 4px 4px 0; font-size: 13px; color: #555;
+        }
+        .tip-box {
+            background: linear-gradient(135deg, #fff8e1, #fff3cd);
+            padding: 14px 16px; border-radius: 12px;
+            font-size: 14px; line-height: 1.7; color: #856404;
+        }
+        .writing-scene { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+        .scene-tag {
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            color: #00695c; padding: 6px 14px; border-radius: 20px; font-size: 13px;
+        }
+        .exam-box { background: #f8f9fa; padding: 14px 16px; border-radius: 12px; font-size: 14px; }
+        .exam-q { font-weight: 500; margin-bottom: 10px; color: #333; }
+        .exam-a { color: #2d7ff9; font-weight: 600; }
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 13px; background: #fafafa; }
+        @media (max-width: 480px) { body { padding: 12px; } .section { padding: 16px; } }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>📚 每日成语</h1>
+            <div class="chengyu">锲而不舍</div>
+            <div class="pinyin">qiè ér bù shě</div>
+            <span class="date-badge">2026年7月30日 · 周四</span>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📖 释义</div>
+            <div class="meaning">
+                锲：雕刻。舍：停止。不停地雕刻，不半途而废。比喻做事<strong>坚持不懈，有恒心有毅力</strong>。
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🏛️ 出处典故</div>
+            <div class="meaning">
+                出自《荀子·劝学》：
+                <div class="quote">"锲而舍之，朽木不折；锲而不舍，金石可镂。"</div>
+                白话：刻几下就停，烂木头也折不断；一直不停地刻，金石也能雕出花纹。荀子用这个比喻劝学——<strong>天赋不够，坚持来凑</strong>。
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">✍️ 分级造句</div>
+            <table class="sentence-table">
+                <thead>
+                    <tr><th>学段</th><th>造句示例</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="tag-primary">🔰 小学</span></td><td>小红<strong>锲而不舍</strong>地练字，字写得越来越漂亮了。</td></tr>
+                    <tr><td><span class="tag-warning">🔶 初中</span></td><td>为了攻克这道数学压轴题，他<strong>锲而不舍</strong>地演算了整整一个下午，终于找到了突破口。</td></tr>
+                    <tr><td><span class="tag-danger">🔷 高中</span></td><td>科研工作者正是凭着<strong>锲而不舍</strong>的探索精神，在一次次失败中积累经验，才最终推动了技术的革新。</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🔄 近义词 / 反义词</div>
+            <div class="word-pair">
+                <div>
+                    <div style="font-weight:500; margin-bottom:6px; color:#2d7ff9;">近义词</div>
+                    <span>坚持不懈</span><span>持之以恒</span><span>水滴石穿</span><span>孜孜不倦</span>
+                </div>
+                <div>
+                    <div style="font-weight:500; margin-bottom:6px; color:#c41e3a;">反义词</div>
+                    <span>半途而废</span><span>虎头蛇尾</span><span>浅尝辄止</span><span>一曝十寒</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">⚠️ 易错提醒</div>
+            <div class="tip-box">
+                • "锲"读 <strong>qiè</strong>（第四声），不读 qì，别跟"契约"的"契"搞混<br>
+                • "舍"在这里读 <strong>shě</strong>（舍弃之意），不是宿舍的 shè<br>
+                • 写作文时属于<strong>加分词汇</strong>，适合用在结尾升华段
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💡 记忆小窍门</div>
+            <div class="meaning">
+                把"锲"想成一把刻刀，"不舍"= 不停手。想象一个人拿着刀一直刻石头，刻了一天又一天——画面感一下就有了！
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📝 作文适用场景</div>
+            <div class="writing-scene">
+                <span class="scene-tag">坚持/毅力类</span>
+                <span class="scene-tag">成长类</span>
+                <span class="scene-tag">科技创新类</span>
+            </div>
+            <div class="meaning" style="margin-top:12px;">
+                • 成功源于锲而不舍的努力<br>
+                • 每一次锲而不舍的尝试，都是成长的印记<br>
+                • 正是科学家们锲而不舍的精神，推动了人类文明进步
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🎯 考试高频考点</div>
+            <div class="exam-box">
+                <div class="exam-q"><strong>考法一：选词填空</strong><br>
+                他花了十年时间研究古籍，这种（ ）的精神令人敬佩。<br>
+                A. 锲而不舍　B. 津津有味　C. 不约而同　D. 争先恐后</div>
+                <div class="exam-a">答案：A</div>
+                <hr style="margin:16px 0; border:none; border-top:1px dashed #ddd;">
+                <div class="exam-q"><strong>考法二：成语辨析</strong><br>
+                "锲而不舍" vs "坚持不懈"——前者强调"不放弃"的动作感，后者侧重"持续稳定"的状态感。作文中前者更有画面张力。</div>
+            </div>
+        </div>
+        <div class="footer">
+            每日成语 · 助力学生积累 | 长按收藏此页 📱
+        </div>
+    </div>
+</body>
+</html>
