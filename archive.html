@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 每日成语 · 归档</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0; padding: 16px; min-height: 100vh;
+        }
+        .card {
+            max-width: 720px; margin: 0 auto; background: white;
+            border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #4361ee, #7209b7);
+            color: white; padding: 24px; text-align: center;
+        }
+        .header h1 { margin: 0; font-size: 22px; letter-spacing: 2px; }
+        .header p { margin: 8px 0 0; font-size: 14px; opacity: 0.85; }
+        .section { padding: 20px 24px; }
+        .section-title {
+            font-size: 15px; font-weight: 600; color: #4361ee;
+            margin-bottom: 14px; display: flex; align-items: center;
+        }
+        .section-title::before {
+            content: ""; width: 4px; height: 16px; background: #4361ee;
+            border-radius: 2px; margin-right: 8px;
+        }
+        table {
+            width: 100%; border-collapse: collapse; font-size: 14px;
+        }
+        thead th {
+            background: #f8f9fa; color: #555; font-weight: 600;
+            padding: 12px 10px; text-align: left;
+            border-bottom: 2px solid #e9ecef;
+        }
+        tbody td {
+            padding: 12px 10px; border-bottom: 1px solid #f0f0f0;
+            color: #333; vertical-align: middle;
+        }
+        tbody tr:hover { background: #fafbff; }
+        .tag-day {
+            display: inline-block; padding: 2px 8px; border-radius: 10px;
+            font-size: 12px; font-weight: 500;
+        }
+        .tag-mon { background: #e3f2fd; color: #1565c0; }
+        .tag-tue { background: #e8f5e9; color: #2e7d32; }
+        .tag-wed { background: #fff3e0; color: #ef6c00; }
+        .tag-thu { background: #f3e5f5; color: #7b1fa2; }
+        .tag-fri { background: #fce4ec; color: #c62828; }
+        .tag-sat { background: #e0f7fa; color: #00838f; }
+        .tag-sun { background: #f1f8e9; color: #558b2f; }
+        a.chengyu-link {
+            color: #4361ee; text-decoration: none; font-weight: 600;
+        }
+        a.chengyu-link:hover { text-decoration: underline; }
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 13px; background: #fafafa; }
+        @media (max-width: 480px) {
+            body { padding: 10px; }
+            .section { padding: 14px 16px; }
+            table { font-size: 13px; }
+            thead th, tbody td { padding: 10px 6px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>📚 每日成语 · 归档总表</h1>
+            <p>坚持积累，每天进步一点点 🌱</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📋 历史成语一览</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>星期</th>
+                        <th>成语</th>
+                        <th>链接</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026-07-30</td>
+                        <td><span class="tag-day tag-thu">周四</span></td>
+                        <td><strong>锲而不舍</strong></td>
+                        <td><a class="chengyu-link" href="https://dabao260730.github.io/chengyu-daily/2026-07-30.html">查看 →</a></td>
+                    </tr>
+                    <!-- 后续每天在此处插入新行，格式如下：
+                    <tr>
+                        <td>2026-07-31</td>
+                        <td><span class="tag-day tag-fri">周五</span></td>
+                        <td><strong>成语名</strong></td>
+                        <td><a class="chengyu-link" href="https://dabao260730.github.io/chengyu-daily/2026-07-31.html">查看 →</a></td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" style="background:#f8f9fa; border-radius:0 0 20px 20px;">
+            <div class="section-title">📌 使用说明</div>
+            <div style="font-size:14px; color:#555; line-height:1.8;">
+                • 每天更新后，本条链接永久有效，可随时回看<br>
+                • 点击「查看 →」即可打开当天的成语卡片<br>
+                • 如需搜索某条成语，可用浏览器 Ctrl+F 查找<br>
+                • 此页面会持续累积，越用越值钱 💎
+            </div>
+        </div>
+
+        <div class="footer">
+            每日成语 · 助力学生积累 | 由元宝 AI 自动生成 🤖
+        </div>
+    </div>
+</body>
+</html>
